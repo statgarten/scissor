@@ -3,7 +3,7 @@
 #'
 
 impute <- function(inputData, column, operator, value = NULL, to = NULL){
-  if(operator == 'remove'){
+  if(operator == 'Remove'){
     if(is.null(value)){
       eval(parse(
         text =
@@ -24,7 +24,7 @@ impute <- function(inputData, column, operator, value = NULL, to = NULL){
 
   }
 
-  if(operator == 'replace'){
+  if(operator == 'Replace'){
     if(is.null(value)){
       eval(parse(
         text =
