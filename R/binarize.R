@@ -7,7 +7,7 @@ binarize <- function(inputData, column, operator, value){
       text =
         paste0(
           "inputData <- inputData %>% ",
-          "base::transform( ", column, "bin = ",
+          "base::transform( ", column, " = ",
           "ifelse( ", column, " ", operator, " ", value, ", 1, 0 ) )"
         )
     ))
@@ -18,7 +18,7 @@ binarize <- function(inputData, column, operator, value){
       text =
         paste0(
           "inputData <- inputData %>% ",
-          "base::transform( ", column, "bin = ",
+          "base::transform( ", column, " = ",
           "ifelse( ", column, " %in% ", value, ", 1, 0 ) )"
         )
     ))
@@ -28,7 +28,7 @@ binarize <- function(inputData, column, operator, value){
       text =
         paste0(
           "inputData <- inputData %>% ",
-          "base::transform( ", column, "bin = ",
+          "base::transform( ", column, " = ",
           "ifelse(! ", column, " %in% ", value, ", 1, 0 ) )"
         )
     ))
@@ -38,7 +38,7 @@ binarize <- function(inputData, column, operator, value){
       text =
         paste0(
           "inputData <- inputData %>% ",
-          "base::transform( ", column, "bin = ",
+          "base::transform( ", column, " = ",
           "ifelse( grepl(", column, ", ", value, "), 1, 0 ) )"
         )
     ))
@@ -48,7 +48,7 @@ binarize <- function(inputData, column, operator, value){
       text =
         paste0(
           "inputData <- inputData %>% ",
-          "base::transform( ", column, "bin = ",
+          "base::transform( ", column, " = ",
           "ifelse(! grepl(", column, ", ", value, "), 1, 0 ) )"
         )
     ))

@@ -2,18 +2,18 @@
 #' @export
 #'
 
-trans <- function(inputData, column, operator){
+trans <- function(inputData, column, operator, value = NULL){
   if(operator == 'Round'){
     eval(parse(
       text =
         paste0(
           "inputData <- inputData %>% ",
-          "base::transform( ", column, " = round(", column, "))"
+          "base::transform( ", column, " = round(", column, ", ", value, "))"
         )
     ))
   }
 
-  if (operator %in% c("Log", "Log10", "Sqrt", "-" ) ) {
+  if (operator %in% c("Log", "Log10", "Log2", "Sqrt", "-" ) ) {
     eval(parse(
       text =
         paste0(

@@ -25,6 +25,7 @@ impute <- function(inputData, column, operator, value = NULL, to = NULL){
   }
 
   if(operator == 'Replace'){
+    to <- ifelse(is.numeric(to), to, paste0('"', to, '"'))
     if(is.null(value)){
       eval(parse(
         text =
