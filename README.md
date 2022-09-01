@@ -1,4 +1,4 @@
-# :yellow_heart: scissor <img src = {hexSticker_png} width = 120 align = 'right'>
+# :yellow_heart: scissor <img src = '' width = 120 align = 'right'>
 
 Data wrangling functions considered with shiny.
 
