@@ -1,7 +1,19 @@
+#' @title transform (numerically) dataframe's column
+#' @description apply column with round, log, normalize.
+#' @examples
+#' iris %>% scissor::trans('Sepal.Length', '-')
+#' iris %>% scissor::trans('Sepal.Length', 'round')
+#'
+#' @param inputData data frame
+#' @param column column to be function applied (should be numerical column)
+#' @param operator "round", "Log", "Log10", "Log2", "Sqrt", "-", "Min-Max", "Normal"
+#' @param value value for used as additional parameter (round only for now)
+#'
+#' @return data frame with changed column
+#' @seealso dplyr's `mutate_` function
 #' @import magrittr
 #' @export
 #'
-
 trans <- function(inputData, column, operator, value = NULL){
   if(operator == 'Round'){
     eval(parse(

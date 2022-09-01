@@ -1,3 +1,15 @@
+#' @title Impute data frame's data
+#' @description Remove or Replace specific value by given keyword
+#' @examples
+#' iris %>% impute('Sepal.Width', 'Replace', value = '3.1', to = '3.12345')
+#' iris %>% impute('Species', 'Remove', value = 'virginica')
+#' @param inputData data frame
+#' @param column column to be funcion applied
+#' @param opeartor either 'Remove' or 'Replace'
+#' @param value keyword to remove or replace
+#' @param to if operator is "Replace", target to be transformed
+#' @return data frame with changed column
+#' @seealso dplyr's `filter_` and `mutate_` function
 #' @import magrittr
 #' @export
 #'
@@ -17,7 +29,7 @@ impute <- function(inputData, column, operator, value = NULL, to = NULL){
         text =
           paste0(
             "inputData <- inputData %>% ",
-            "base::subset(", column, " != ", value, ")"
+            "base::subset(", column, " != '", value, "')"
           )
       ))
     }
@@ -39,11 +51,11 @@ impute <- function(inputData, column, operator, value = NULL, to = NULL){
         text =
           paste0(
             "inputData <- inputData %>% ",
-            "base::transform(", column, " = ifelse(",column, " == ", value, ", ", to, ", ", column, "))"
+            "base::transform(", column, " = ifelse(",column, " == '", value, "', ", to, ", ", column, "))"
           )
       ))
     }
   }
 
-
+  return(inputData)
 }

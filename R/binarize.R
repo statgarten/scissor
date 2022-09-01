@@ -1,3 +1,16 @@
+#' @title binarize dataframe's column
+#' @description change column as 1 or 0 with provided criteria
+#' @examples
+#' iris %>% scissor::binarize('Sepal.Length', '>', '6')
+#' iris %>% scissor::binarize('Species', 'In', 'c("virginica", "setosa")')
+#'
+#' @param inputData data frame
+#' @param column column to be function applied
+#' @param operator ">", ">=", "<", "<=", "==", "!=", "In", "Not In", "Contains", "Not Contains"
+#' @param value value for used as criteria. in Case of In / Contains value should give as `c('EX1','EX2','EX3')` format
+#'
+#' @return data frame with changed column
+#' @seealso dplyr's `mutate_` function
 #' @import magrittr
 #' @export
 #'
@@ -8,7 +21,7 @@ binarize <- function(inputData, column, operator, value){
         paste0(
           "inputData <- inputData %>% ",
           "base::transform( ", column, " = ",
-          "ifelse( ", column, " ", operator, " ", value, ", 1, 0 ) )"
+          "ifelse( ", column, " ", operator, " '", value, "', 1, 0 ) )"
         )
     ))
   }
@@ -39,7 +52,7 @@ binarize <- function(inputData, column, operator, value){
         paste0(
           "inputData <- inputData %>% ",
           "base::transform( ", column, " = ",
-          "ifelse( grepl(", column, ", ", value, "), 1, 0 ) )"
+          "ifelse( grepl(", column, ", '", value, "'), 1, 0 ) )"
         )
     ))
   }
@@ -49,7 +62,7 @@ binarize <- function(inputData, column, operator, value){
         paste0(
           "inputData <- inputData %>% ",
           "base::transform( ", column, " = ",
-          "ifelse(! grepl(", column, ", ", value, "), 1, 0 ) )"
+          "ifelse(! grepl(", column, ", '", value, "'), 1, 0 ) )"
         )
     ))
   }
