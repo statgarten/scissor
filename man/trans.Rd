@@ -22,8 +22,8 @@ data frame with changed column
 apply column with round, log, normalize.
 }
 \examples{
-iris \%>\% scissor::trans('Sepal.Length', '-')
-iris \%>\% scissor::trans('Sepal.Length', 'round')
+scissor::trans(iris,'Sepal.Length', '-')
+scissor::trans(iris,'Sepal.Length', 'round')
 
 }
 \seealso{

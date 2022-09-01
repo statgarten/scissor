@@ -1,8 +1,8 @@
 #' @title transform (numerically) dataframe's column
 #' @description apply column with round, log, normalize.
 #' @examples
-#' iris %>% scissor::trans('Sepal.Length', '-')
-#' iris %>% scissor::trans('Sepal.Length', 'round')
+#' scissor::trans(iris,'Sepal.Length', '-')
+#' scissor::trans(iris,'Sepal.Length', 'round')
 #'
 #' @param inputData data frame
 #' @param column column to be function applied (should be numerical column)

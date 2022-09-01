@@ -1,8 +1,8 @@
 #' @title subset dataframe's column
 #' @description subset data with given criteria
 #' @examples
-#' iris %>% scissor::subset('Sepal.Length', '>', '5')
-#' iris %>% scissor::subset('Species', 'In', 'c("virginica", "setosa")')
+#' scissor::subset(iris,'Sepal.Length', '>', '5')
+#' scissor::subset(iris,'Species', 'In', 'c("virginica", "setosa")')
 #'
 #' @param inputData data frame
 #' @param column column to be function applied

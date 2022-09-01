@@ -1,8 +1,8 @@
 #' @title Impute data frame's data
 #' @description Remove or Replace specific value by given keyword
 #' @examples
-#' iris %>% impute('Sepal.Width', 'Replace', value = '3.1', to = '3.12345')
-#' iris %>% impute('Species', 'Remove', value = 'virginica')
+#' impute(iris, 'Sepal.Width', 'Replace', value = '3.1', to = '3.12345')
+#' impute(iris, 'Species', 'Remove', value = 'virginica')
 #' @param inputData data frame
 #' @param column column to be funcion applied
 #' @param opeartor either 'Remove' or 'Replace'

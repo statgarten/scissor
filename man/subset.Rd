@@ -22,8 +22,8 @@ data frame with changed column
 subset data with given criteria
 }
 \examples{
-iris \%>\% scissor::subset('Sepal.Length', '>', '5')
-iris \%>\% scissor::subset('Species', 'In', 'c("virginica", "setosa")')
+scissor::subset(iris,'Sepal.Length', '>', '5')
+scissor::subset(iris,'Species', 'In', 'c("virginica", "setosa")')
 
 }
 \seealso{

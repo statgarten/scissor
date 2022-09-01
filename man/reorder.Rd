@@ -18,7 +18,7 @@ data frame with column order changed
 select data as given column's order. Column provided as character.
 }
 \examples{
-iris \%>\% reorder(c('Species', 'Sepal.Length', 'Sepal.Width', 'Petal.Length', 'Petal.Width'))
+reorder(iris, c('Species', 'Sepal.Length', 'Sepal.Width', 'Petal.Length', 'Petal.Width'))
 }
 \seealso{
 dplyr's \code{select_} function

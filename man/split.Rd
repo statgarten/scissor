@@ -20,7 +20,7 @@ data frame with newly splited columns
 apply column split text and provides 2 result column. Column provided as character
 }
 \examples{
-iris \%>\% split(column = 'Sepal.Length', splitby = '.')
+split(iris, column = 'Sepal.Length', splitby = '.')
 }
 \seealso{
 tidyr's \code{separate} function

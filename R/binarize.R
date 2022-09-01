@@ -1,8 +1,8 @@
 #' @title binarize dataframe's column
 #' @description change column as 1 or 0 with provided criteria
 #' @examples
-#' iris %>% scissor::binarize('Sepal.Length', '>', '6')
-#' iris %>% scissor::binarize('Species', 'In', 'c("virginica", "setosa")')
+#' scissor::binarize(iris,'Sepal.Length', '>', '6')
+#' scissor::binarize(iris,'Species', 'In', 'c("virginica", "setosa")')
 #'
 #' @param inputData data frame
 #' @param column column to be function applied

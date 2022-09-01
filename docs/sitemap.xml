@@ -7,12 +7,33 @@
     <loc>/LICENSE-text.html</loc>
   </url>
   <url>
+    <loc>/LICENSE.html</loc>
+  </url>
+  <url>
     <loc>/authors.html</loc>
   </url>
   <url>
     <loc>/index.html</loc>
   </url>
   <url>
+    <loc>/reference/binarize.html</loc>
+  </url>
+  <url>
+    <loc>/reference/impute.html</loc>
+  </url>
+  <url>
     <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/reorder.html</loc>
+  </url>
+  <url>
+    <loc>/reference/split.html</loc>
+  </url>
+  <url>
+    <loc>/reference/subset.html</loc>
+  </url>
+  <url>
+    <loc>/reference/trans.html</loc>
   </url>
 </urlset>

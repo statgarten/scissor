@@ -1,7 +1,7 @@
 #' @title Split data frame's column text
 #' @description apply column split text and provides 2 result column. Column provided as character
 #' @examples
-#' iris %>% split(column = 'Sepal.Length', splitby = '.')
+#' split(iris, column = 'Sepal.Length', splitby = '.')
 #' @param inputData data frame to split
 #' @param column column that split will be applied
 #' @param splitby keyword to used as split; ex. '.'

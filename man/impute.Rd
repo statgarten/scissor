@@ -24,8 +24,8 @@ data frame with changed column
 Remove or Replace specific value by given keyword
 }
 \examples{
-iris \%>\% impute('Sepal.Width', 'Replace', value = '3.1', to = '3.12345')
-iris \%>\% impute('Species', 'Remove', value = 'virginica')
+impute(iris, 'Sepal.Width', 'Replace', value = '3.1', to = '3.12345')
+impute(iris, 'Species', 'Remove', value = 'virginica')
 }
 \seealso{
 dplyr's \code{filter_} and \code{mutate_} function
