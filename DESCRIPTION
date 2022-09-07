@@ -9,5 +9,7 @@ Encoding: UTF-8
 Import:
   magrittr,
   tidyr
+Suggests:
+  dplyr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
