@@ -6,5 +6,8 @@ Authors@R:
 Description: Provides data wrangling functions while gets prarmeter as text input.
 License: MIT + file LICENSE
 Encoding: UTF-8
+Import:
+  magrittr,
+  tidyr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
