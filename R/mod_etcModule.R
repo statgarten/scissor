@@ -1,11 +1,10 @@
 #' @title Shiny Module for data transformation
-#' @description etcModlue UI Function
+#' @description etcModule UI Function
 #'
 #'
 #' @param id id of module
 #' @export
 #' @import shiny
-#'
 #'
 mod_etcModule_ui <- function(id) {
   ns <- NS(id)
@@ -28,7 +27,7 @@ mod_etcModule_ui <- function(id) {
 }
 
 #' @title Shiny Module for data transformation
-#' @description etcModlue Server Functions
+#' @description etcModule Server Functions
 #' @export
 #' @import shiny
 #' @param id id of module
@@ -89,9 +88,3 @@ mod_etcModule_server <- function(id, inputData) {
     return(data_transed)
   })
 }
-
-## To be copied in the UI
-# mod_etcModlue_ui("etcModlue_1")
-
-## To be copied in the server
-# mod_etcModlue_server("etcModlue_1")
