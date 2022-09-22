@@ -2,7 +2,7 @@ Package: scissor
 Title: Data wrangling with shiny input
 Version: 0.2.0
 Authors@R: 
-    person("Jinhwan", "Kim", , "hwanistic@gmail.com", role = c("aut", "cre"))
+    person("Jinhwan", "Kim", ,"hwanistic@gmail.com", role = c("aut", "cre"))
 Description: Provides data wrangling functions while gets prarmeter as text input.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -10,6 +10,8 @@ Import:
   magrittr,
   tidyr
 Suggests:
-  dplyr
+    dplyr,
+    rmarkdown
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
+URL: https://github.com/statgarten/scissor

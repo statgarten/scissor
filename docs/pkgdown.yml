@@ -1,6 +1,12 @@
 pandoc: '2.18'
 pkgdown: 2.0.6
 pkgdown_sha: ~
-articles: {}
-last_built: 2022-09-01T04:17Z
+articles:
+  usage-export-Module: usage-export-Module.html
+  usage-reorder-Module: usage-reorder-Module.html
+  usage-transform-Module: usage-transform-Module.html
+last_built: 2022-09-22T05:50Z
+urls:
+  reference: https://www.statgarten.com/scissor/reference
+  article: https://www.statgarten.com/scissor/articles
 

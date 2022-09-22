@@ -1,39 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>https://www.statgarten.com/scissor/404.html</loc>
   </url>
   <url>
-    <loc>/LICENSE-text.html</loc>
+    <loc>https://www.statgarten.com/scissor/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>/LICENSE.html</loc>
+    <loc>https://www.statgarten.com/scissor/LICENSE.html</loc>
   </url>
   <url>
-    <loc>/authors.html</loc>
+    <loc>https://www.statgarten.com/scissor/articles/articles/usage-export-Module.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
+    <loc>https://www.statgarten.com/scissor/articles/articles/usage-reorder-Module.html</loc>
   </url>
   <url>
-    <loc>/reference/binarize.html</loc>
+    <loc>https://www.statgarten.com/scissor/articles/articles/usage-transform-Module.html</loc>
   </url>
   <url>
-    <loc>/reference/impute.html</loc>
+    <loc>https://www.statgarten.com/scissor/articles/index.html</loc>
   </url>
   <url>
-    <loc>/reference/index.html</loc>
+    <loc>https://www.statgarten.com/scissor/articles/usage-export-Module.html</loc>
   </url>
   <url>
-    <loc>/reference/reorder.html</loc>
+    <loc>https://www.statgarten.com/scissor/articles/usage-reorder-Module.html</loc>
   </url>
   <url>
-    <loc>/reference/split.html</loc>
+    <loc>https://www.statgarten.com/scissor/articles/usage-transform-Module.html</loc>
   </url>
   <url>
-    <loc>/reference/subset.html</loc>
+    <loc>https://www.statgarten.com/scissor/authors.html</loc>
   </url>
   <url>
-    <loc>/reference/trans.html</loc>
+    <loc>https://www.statgarten.com/scissor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/binarize.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/impute.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_binarizeModule_server.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_binarizeModule_ui.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_etcModule_server.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_etcModule_ui.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_exportModule_server.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_exportModule_ui.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_logModule_server.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_logModule_ui.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_reorderModule_server.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_reorderModule_ui.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_replaceModule_server.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_replaceModule_ui.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_roundModule_server.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_roundModule_ui.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_splitModule_server.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_splitModule_ui.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/reorder.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/split.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/subset.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/trans.html</loc>
   </url>
 </urlset>
