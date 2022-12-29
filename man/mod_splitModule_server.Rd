@@ -4,7 +4,7 @@
 \alias{mod_splitModule_server}
 \title{Shiny Module for data transform}
 \usage{
-mod_splitModule_server(id, inputData)
+mod_splitModule_server(id, inputData, opened)
 }
 \arguments{
 \item{id}{id of module}
