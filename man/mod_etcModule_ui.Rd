@@ -10,5 +10,5 @@ mod_etcModule_ui(id)
 \item{id}{id of module}
 }
 \description{
-etcModlue UI Function
+etcModule UI Function
 }

@@ -15,5 +15,5 @@ mod_etcModule_server(id, inputData)
 transformed data
 }
 \description{
-etcModlue Server Functions
+etcModule Server Functions
 }
