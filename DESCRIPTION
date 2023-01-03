@@ -1,6 +1,6 @@
 Package: scissor
 Title: Data wrangling with shiny input
-Version: 0.2.1
+Version: 0.2.2
 Authors@R: 
     person("Jinhwan", "Kim", ,"hwanistic@gmail.com", role = c("aut", "cre"))
 Description: Provides data wrangling functions while gets prarmeter as text input.
