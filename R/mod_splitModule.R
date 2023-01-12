@@ -47,7 +47,7 @@ mod_splitModule_server <- function(id, inputData, opened) {
     })
 
     output$description <- renderText({
-      paste0("[COL] 12/34 -> [COLA] 12, [COLB] 34")
+      paste0("[COL] 12/34 -> [COLA] 12, [COLB] 34. \nSpecial character require \\\\ ex) '\\\\.'")
     })
 
     data_splited <- reactive({
