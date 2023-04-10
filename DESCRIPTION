@@ -6,12 +6,17 @@ Authors@R:
 Description: Provides data wrangling functions while gets prarmeter as text input.
 License: MIT + file LICENSE
 Encoding: UTF-8
-Import:
+Imports:
   magrittr,
   tidyr,
   RSQLite,
   sortable,
-  writexl
+  writexl,
+  R6,
+  later,
+  mime,
+  xtable,
+  ellipsis
 Suggests:
     dplyr,
     rmarkdown
