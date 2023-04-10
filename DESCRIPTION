@@ -16,7 +16,8 @@ Imports:
   later,
   mime,
   xtable,
-  ellipsis
+  ellipsis,
+  assertthat
 Suggests:
     dplyr,
     rmarkdown
