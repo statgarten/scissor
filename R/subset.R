@@ -1,8 +1,8 @@
 #' @title subset dataframe's column
 #' @description subset data with given criteria
 #' @examples
-#' scissor::subset(iris,'Sepal.Length', '>', '5')
-#' scissor::subset(iris,'Species', 'In', 'c("virginica", "setosa")')
+#' scissor::subset(iris, "Sepal.Length", ">", "5")
+#' scissor::subset(iris, "Species", "In", 'c("virginica", "setosa")')
 #'
 #' @param inputData data frame
 #' @param column column to be function applied
@@ -15,13 +15,13 @@
 #' @export
 #'
 
-subset <- function(inputData, column, operator, value){
+subset <- function(inputData, column, operator, value) {
   if (operator == "In") {
     eval(parse(
       text =
         paste0(
           "inputData <- inputData %>% ",
-          "base::subset( ", column, " %in% ","c(", value, ") )"
+          "base::subset( ", column, " %in% ", "c(", value, ") )"
         )
     ))
   }
@@ -30,7 +30,7 @@ subset <- function(inputData, column, operator, value){
       text =
         paste0(
           "inputData <- inputData %>% ",
-          "base::subset( !", column, " %in% ","c(", value, ") ) "
+          "base::subset( !", column, " %in% ", "c(", value, ") ) "
         )
     ))
   }
@@ -39,7 +39,7 @@ subset <- function(inputData, column, operator, value){
       text =
         paste0(
           "inputData <-", "inputData %>% ",
-          "base::subset(grepl(", value, ", ", column,") )"
+          "base::subset(grepl(", value, ", ", column, ") )"
         )
     ))
   }
@@ -58,7 +58,7 @@ subset <- function(inputData, column, operator, value){
       text =
         paste0(
           "inputData <- inputData %>% ",
-          "base::subset(", column, " ", operator," ", value, ")"
+          "base::subset(", column, " ", operator, " ", value, ")"
         )
     ))
   }

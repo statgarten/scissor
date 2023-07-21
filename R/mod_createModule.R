@@ -22,7 +22,7 @@ mod_createModule_ui <- function(id) {
         selectInput(
           inputId = ns("operator"),
           label = "operator",
-          choices = c('+', '-', '*', '/', '=', 'Paste')
+          choices = c("+", "-", "*", "/", "=", "Paste")
         )
       ),
       column(
@@ -86,32 +86,32 @@ mod_createModule_server <- function(id, inputData) {
       req(inputData())
       data <- inputData()
 
-      if(input$operator == '='){
-        additive = data[,input$cols]
+      if (input$operator == "=") {
+        additive <- data[, input$cols]
       }
 
-      if(input$operator == '+'){
-        additive = data[, input$cols] + data[, input$by]
+      if (input$operator == "+") {
+        additive <- data[, input$cols] + data[, input$by]
       }
 
-      if(input$operator == '-') {
-        additive = data[, input$cols] - data[, input$by]
+      if (input$operator == "-") {
+        additive <- data[, input$cols] - data[, input$by]
       }
 
-      if(input$operator == '*') {
-        additive = data[, input$cols] * data[, input$by]
+      if (input$operator == "*") {
+        additive <- data[, input$cols] * data[, input$by]
       }
 
-      if(input$operator == '/') {
-        additive = data[, input$cols] / data[, input$by]
+      if (input$operator == "/") {
+        additive <- data[, input$cols] / data[, input$by]
       }
 
-      if(input$operator == 'Paste') {
-        additive = paste0(data[, input$cols], data[, input$by])
+      if (input$operator == "Paste") {
+        additive <- paste0(data[, input$cols], data[, input$by])
       }
 
       data <- cbind(data, additive)
-      colnames(data)[ncol(data)]  <- input$newName
+      colnames(data)[ncol(data)] <- input$newName
 
       data
     })

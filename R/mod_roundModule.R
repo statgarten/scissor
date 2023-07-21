@@ -68,4 +68,3 @@ mod_roundModule_server <- function(id, inputData) {
     return(data_rounded)
   })
 }
-

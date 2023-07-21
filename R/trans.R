@@ -1,8 +1,8 @@
 #' @title transform (numerically) dataframe's column
 #' @description apply column with round, log, normalize.
 #' @examples
-#' scissor::trans(iris,'Sepal.Length', '-')
-#' scissor::trans(iris,'Sepal.Length', 'round')
+#' scissor::trans(iris, "Sepal.Length", "-")
+#' scissor::trans(iris, "Sepal.Length", "round")
 #'
 #' @param inputData data frame
 #' @param column column to be function applied (should be numerical column)
@@ -14,8 +14,8 @@
 #' @import magrittr
 #' @export
 #'
-trans <- function(inputData, column, operator, value = NULL){
-  if(operator == 'Round'){
+trans <- function(inputData, column, operator, value = NULL) {
+  if (operator == "Round") {
     eval(parse(
       text =
         paste0(
@@ -25,12 +25,12 @@ trans <- function(inputData, column, operator, value = NULL){
     ))
   }
 
-  if (operator %in% c("Log", "Log10", "Log2", "Sqrt", "-" ) ) {
+  if (operator %in% c("Log", "Log10", "Log2", "Sqrt", "-")) {
     eval(parse(
       text =
         paste0(
           "inputData <- inputData %>% ",
-          "base::transform( ", column, " = ", tolower(operator), "(", column,"))"
+          "base::transform( ", column, " = ", tolower(operator), "(", column, "))"
         )
     ))
   }
@@ -40,7 +40,7 @@ trans <- function(inputData, column, operator, value = NULL){
       text =
         paste0(
           "inputData <- inputData %>% ",
-          "base::transform(",column, " = minmax(", column, "))"
+          "base::transform(", column, " = minmax(", column, "))"
         )
     ))
   }
@@ -50,7 +50,7 @@ trans <- function(inputData, column, operator, value = NULL){
       text =
         paste0(
           "inputData <- inputData %>% ",
-          "base::transform(",column, " = normalize(", column, "))"
+          "base::transform(", column, " = normalize(", column, "))"
         )
     ))
   }
