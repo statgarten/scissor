@@ -19,12 +19,12 @@ jobs:
 
     - name: Install dependencies
       run: |
-        install.packages('styler')
+        R -e "install.packages('styler')"
 
     - name: Style code
       run: |
-        Rscript -e 'styler::style_pkg()'
-        
+        R -e 'styler::style_pkg()'
+
     - name: Commit changes
       run: |
         git config --global user.name 'github-actions[bot]'
