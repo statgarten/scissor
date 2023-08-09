@@ -15,7 +15,7 @@
 #' @export
 #'
 binarize <- function(inputData, column, operator, value) {
-  if (operator %in% c(">", ">=", "<", "<=", "==", "!=")) {
+  if (operator %in% c(">=", ">", "<=", "<", "==", "!=")) {
     eval(parse(
       text =
         paste0(
