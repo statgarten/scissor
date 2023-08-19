@@ -25,7 +25,13 @@ jobs:
       run: |
         R -e 'styler::style_pkg()'
 
+    - name: Check if there are any changes
+      id: verify_diff
+      run: |
+        git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+
     - name: Commit changes
+      if: steps.verify_diff.outputs.changed == 'true'
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
