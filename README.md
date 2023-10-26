@@ -1,6 +1,6 @@
 # :yellow_heart: scissor <img src = 'logo.png' width = 120 align = 'right'>
 
-Data wrangling functions considered with shiny.
+Shiny module that provide data wrangling functions.
 
 ## :clipboard: Prerequisites
 
