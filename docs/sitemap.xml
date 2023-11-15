@@ -52,6 +52,12 @@
     <loc>https://www.statgarten.com/scissor/reference/mod_binarizeModule_ui.html</loc>
   </url>
   <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_createModule_server.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_createModule_ui.html</loc>
+  </url>
+  <url>
     <loc>https://www.statgarten.com/scissor/reference/mod_etcModule_server.html</loc>
   </url>
   <url>
@@ -62,6 +68,12 @@
   </url>
   <url>
     <loc>https://www.statgarten.com/scissor/reference/mod_exportModule_ui.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_gsubModule_server.html</loc>
+  </url>
+  <url>
+    <loc>https://www.statgarten.com/scissor/reference/mod_gsubModule_ui.html</loc>
   </url>
   <url>
     <loc>https://www.statgarten.com/scissor/reference/mod_logModule_server.html</loc>
