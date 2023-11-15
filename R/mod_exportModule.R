@@ -59,17 +59,9 @@ mod_exportModule_server <- function(id, inputData) {
           saveRDS(inputData(), file = con)
         }
         if (input$ext == ".sqlite") {
-          RSQLite::dbWriteTable(
-            conn = RSQLite::dbConnect(
-              RSQLite::dbDriver("SQLite"),
-              dbname = con
-            ),
-            name = "data1",
-            value = inputData()
-          )
-          RSQLite::dbDisconnect()
-          # con <- dbConnect(drv=RSQLite::SQLite(), dbname="SQLITE_FILENAME")
-          # data <- dbGetQuery(conn=con, statement = "SELECT * FROM 'data1'")
+          con <- dbConnect(RSQLite::SQLite(), con)
+          dbWriteTable(con, "data", inputData())
+          dbDisconnect(con)
         }
         if (input$ext == ".xlsx") {
           writexl::write_xlsx(inputData(), path = con)
