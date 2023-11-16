@@ -16,7 +16,7 @@ remotes::install_github('statgarten/scissor')
 library(scissor)
 ```
 
-## :paperclip: Dependency
+## :paperclip: Dependency/의존 관계
 * [door](https://github.com/statgarten/door)
 
 ## :blush: Authors
