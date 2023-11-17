@@ -9,7 +9,7 @@ Shiny와 호환되는 데이터 Wrangling 함수를 제공하는 패키지입니
 * [magrittr](https://magrittr.tidyverse.org/) - 2.0.3
 * [tidyr](https://tidyr.tidyverse.org/) - 1.2.0
 
-## :wrench: Install
+## :wrench: Install/설치
 
 ```r
 remotes::install_github('statgarten/scissor')
