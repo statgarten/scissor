@@ -20,7 +20,7 @@ library(scissor)
 * [door](https://github.com/statgarten/door)
 
 ## :blush: Authors
-* :octocat: Jinhwan Kim [@jhk0530](http://github.com/jhk0530)
+* :octocat: Jinhwan Kim(김진환) @jhk0530 (http://github.com/jhk0530)
 
 ## :memo: License
 Copyright :copyright: 2022 Jinhwan Kim
