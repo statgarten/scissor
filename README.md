@@ -4,7 +4,7 @@ Shiny module that provide data wrangling functions.
 
 Shiny와 호환되는 데이터 Wrangling 함수를 제공하는 패키지입니다.
 
-## :clipboard: Prerequisites
+## :clipboard: Prerequisites/사전 요구 사항
 
 * [magrittr](https://magrittr.tidyverse.org/) - 2.0.3
 * [tidyr](https://tidyr.tidyverse.org/) - 1.2.0
