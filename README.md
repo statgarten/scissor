@@ -24,7 +24,7 @@ library(scissor)
 
 ## :memo: License
 Copyright :copyright: 2022 Jinhwan Kim
-Copyright :copyright: 2022 Jinhwan Kim. 이 프로젝트는 [MIT](https://opensource.org/licenses/MIT) 라이센스를 따릅니다.
+Copyright :copyright: 2022 Jinhwan Kim. 이 프로젝트는 [MIT(영문)](https://opensource.org/licenses/MIT) 라이센스를 따릅니다.
 This project is [MIT](https://opensource.org/licenses/MIT) licensed
 
 
