@@ -27,4 +27,6 @@ Copyright :copyright: 2022 Jinhwan Kim
 This project is [MIT](https://opensource.org/licenses/MIT) licensed
 
 
-*This README was generated with :two_hearts: by [shinyReadme](http://github.com/jhk0530/shinyReadme)*
+
+
+
