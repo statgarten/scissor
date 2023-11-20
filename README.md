@@ -19,7 +19,7 @@ library(scissor)
 ## :paperclip: Dependency/의존 관계
 * [door](https://github.com/statgarten/door)
 
-## :blush: Authors
+## :blush: Authors/만든 사람들
 * :octocat: Jinhwan Kim (김진환) @jhk0530 (http://github.com/jhk0530)
 
 ## :memo: License
